@@ -1,0 +1,163 @@
+/*メンバーそれぞれのページ*/
+.member-profile{
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    width:min(1200px,95%);
+    margin:50px auto;
+}
+
+.member-image{
+    width:35%;
+    max-width:400px;
+}
+
+.member-card{
+    flex:1;
+
+    padding:40px;
+
+    border:6px solid #ff6699;    /* メンバーカラー */
+    border-radius:25px;
+
+    background:#ffffffcc;
+}
+
+.member-card h1{
+    margin-top:0;
+    margin-bottom:30px;
+
+    color:#ff6699; 
+    font-size:55px;
+}
+
+.member-card p{
+    margin:18px 0;
+    color:#ff6699; 
+    font-size:30px;
+    line-height:1.8;
+
+}
+
+.member-card span{
+    display:inline-block;
+    color:#ff6699; 
+    font-size:30px;
+    width:300px;
+    font-weight:bold;
+    text-align: left;
+}
+
+.profile-item {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: start;
+    margin: 16px 0;
+
+    padding: 16px 0;
+    border-bottom: 2px dotted #ff6699; 
+}
+
+.profile-item span {
+    font-weight: bold;
+}
+
+.profile-item p {
+    margin: 0;
+}
+
+@media (orientation:portrait){
+
+    .member-profile{
+
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .member-image{
+
+        width:80%;
+        max-width:350px;
+    }
+
+    .member-card{
+
+        width:100%;
+        box-sizing:border-box;
+    }
+
+}
+
+
+/*----------------
+      SNS
+----------------*/
+.member-sns {
+    margin-top: 60px;
+}
+
+.sns-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.sns-list a {
+  margin-top: 30px;
+    flex: 1;                 /* 均等に幅を分ける */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    aspect-ratio: 1 / 1;     /* 正方形 */
+    max-width: 300px;         /* 大きくなりすぎないように */
+    background: #fff;
+
+    border-radius: 20px;
+
+    transition: transform .2s ease,
+                box-shadow .2s ease;
+}
+
+.sns-list a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .18);
+}
+
+.sns-list img {
+    width: 55%;
+    height: 55%;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+/*おすすめ動画*/
+* {
+  color: #ff6699; 
+}
+
+.slider-arrow {
+  color: #ff6699; 
+}
+
+.news-text-list a {
+  color: #ff6699; 
+}
+
+.news-text-list a + a {
+  border-top: 2px dotted#ff6699; 
+}
+
+.content-box{
+    flex:1;
+
+    padding:40px;
+
+    border:6px solid #ff6699; 
+    border-radius:25px;
+
+    background:#ffffffcc;
+}

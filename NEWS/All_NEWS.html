@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DROPPING STARS</title>
+  <link rel="icon" href="../img/001.webp" type="image/webp">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="news-page">
+
+  <header class="news-detail-header">
+    <div class="header-box">
+      <a class="logo-button" href="../index.html">
+        <img src="../img/001.webp" alt="ロゴ">
+      </a>
+
+      <nav class="header-nav news-detail-nav">
+        <a href="../index.html">TOP</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="news-list-page">
+    <div class="news-title-row">
+      <h1 class="news-list-title">NEWS</h1>
+
+      <div class="year-switcher">
+        <button id="newerYearButton" type="button" onclick="changeNewsYear(1)">◀</button>
+        <span id="newsYear">2026</span>
+        <button id="olderYearButton" type="button" onclick="changeNewsYear(-1)">▶</button>
+      </div>
+    </div>
+
+    <div class="news-list" id="newsList">
+
+      <a class="news-list-item" data-year="2026" href="./2026_08_01.html">
+        <span class="news-list-date">2026/08/01</span>
+        <span class="news-list-text">どろすたホームページが開設されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_07_18.html">
+        <span class="news-list-date">2026/07/18</span>
+        <span class="news-list-text">RPGの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_07_04.html">
+        <span class="news-list-date">2026/07/04</span>
+        <span class="news-list-text">フォニイの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_06_06.html">
+        <span class="news-list-date">2026/06/06～2026/06/20</span>
+        <span class="news-list-text">【○○な人に回します】ショート動画が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_05_30.html">
+        <span class="news-list-date">2026/05/30</span>
+        <span class="news-list-text">好きすぎて滅！の歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_05_10.html">
+        <span class="news-list-date">2026/05/10</span>
+        <span class="news-list-text">マイクラ配信を行いました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_03_21.html">
+        <span class="news-list-date">2026/03/21</span>
+        <span class="news-list-text">100の質問（前半）が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_02_21.html">
+        <span class="news-list-date">2026/02/21</span>
+        <span class="news-list-text">【配信切り抜き】まのゆくの口癖が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_02_14_4.html">
+        <span class="news-list-date">2026/02/14</span>
+        <span class="news-list-text">１周年記念ゲーム「どろすたーと！」が公開されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_02_14_3.html">
+        <span class="news-list-date">2026/02/14</span>
+        <span class="news-list-text">1周年記念配信を行いました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_02_14_2.html">
+        <span class="news-list-date">2026/02/14</span>
+        <span class="news-list-text">愛言葉Ⅳの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_02_14_1.html">
+        <span class="news-list-date">2026/02/14</span>
+        <span class="news-list-text">ゆうらの見た目とメンバーカラーの変更についてのお知らせです。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_01_24_2.html">
+        <span class="news-list-date">2026/01/24</span>
+        <span class="news-list-text">どろすた初配信が行われました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_01_24_1.html">
+        <span class="news-list-date">2026/01/24</span>
+        <span class="news-list-text">ノマドの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2026" href="./2026_01_01.html">
+        <span class="news-list-date">2026/01/01</span>
+        <span class="news-list-text">鬼瀬乃碧の見た目と名前の変更のお知らせです。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_12_27.html">
+        <span class="news-list-date">2025/12/27</span>
+        <span class="news-list-text">【まのゆく×ゆうら】おこちゃま戦争の歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_11_15.html">
+        <span class="news-list-date">2025/11/15</span>
+        <span class="news-list-text">【ゆうら×鬼瀬乃碧】デビルじゃないもんの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_11_01.html">
+        <span class="news-list-date">2025/11/01</span>
+        <span class="news-list-text">【まのゆく×鬼瀬乃碧】テレキャスタービーボーイの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_09_06.html">
+        <span class="news-list-date">2025/09/06</span>
+        <span class="news-list-text">No Way Backの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_08_15.html">
+        <span class="news-list-date">2025/08/15</span>
+        <span class="news-list-text">カゲロウデイズのShortが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_08_01.html">
+        <span class="news-list-date">2025/08/01</span>
+        <span class="news-list-text">どろすたの愛スクリ～ム！が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_07_26.html">
+        <span class="news-list-date">2025/07/26</span>
+        <span class="news-list-text">メランコリックの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_05_15.html">
+        <span class="news-list-date">2025/05/15</span>
+        <span class="news-list-text">瑠璃の卒業についてのお知らせです。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_05_10.html">
+        <span class="news-list-date">2025/05/10</span>
+        <span class="news-list-text">【ドッキリ】会議議中にしょうもない喧嘩？が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_05_06.html">
+        <span class="news-list-date">2025/05/06～2025/05/08</span>
+        <span class="news-list-text">どろすたの大喜利ショートが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_05_03.html">
+        <span class="news-list-date">2025/05/03</span>
+        <span class="news-list-text">シャルルの歌ってみたが投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_04_01.html">
+        <span class="news-list-date">2025/04/01</span>
+        <span class="news-list-text">どろすたくんがXを乗っ取ったすた！</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_03_20.html">
+        <span class="news-list-date">2025/03/20</span>
+        <span class="news-list-text">ブリキノダンスの歌ってみたが投稿されました。</span>
+      </a>
+      
+      <a class="news-list-item" data-year="2025" href="./2025_03_15.html">
+        <span class="news-list-date">2025/03/15</span>
+        <span class="news-list-text">ハッピーバースデー！暗号ドッキリの動画が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_03_04.html">
+        <span class="news-list-date">2025/03/04</span>
+        <span class="news-list-text">鬼瀬乃碧のメンバー紹介が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_03_03.html">
+        <span class="news-list-date">2025/03/03</span>
+        <span class="news-list-text">瑠璃のメンバー紹介が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_03_02.html">
+        <span class="news-list-date">2025/03/02</span>
+        <span class="news-list-text">ゆうらのメンバー紹介が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_03_01.html">
+        <span class="news-list-date">2025/03/01</span>
+        <span class="news-list-text">まのゆくのメンバー紹介が投稿されました。</span>
+      </a>
+
+      <a class="news-list-item" data-year="2025" href="./2025_02_14.html">
+        <span class="news-list-date">2025/02/14</span>
+        <span class="news-list-text">【初投稿】神のまにまにの歌ってみたが投稿されました。</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>©DROPPING STARS</p>
+  </footer>
+
+  <script src="All_NEWS.js"></script>
+</body>
+
+</html>

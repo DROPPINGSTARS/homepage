@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DROPPING STARS</title>
+  <link rel="icon" href="./img/001.webp" type="image/webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+  <header class="header">
+    <div class="header-box">
+      <button class="logo-button" type="button" onclick="scrollToTop()">
+        <img src="./img/001.webp" alt="ロゴ">
+      </button>
+
+      <nav class="header-nav">
+        <a href="#news">NEWS</a>
+        <a href="#member">MEMBER</a>
+        <a href="#sns">SNS</a>
+        <a href="#memory">MEMORY</a>
+      </nav>
+
+      <button class="hamburger" type="button" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="hamburger-menu" id="hamburgerMenu">
+      <a href="#news" onclick="closeMenu()">▶NEWS</a>
+      <a href="#member" onclick="closeMenu()">▶MEMBER</a>
+      <a href="#sns" onclick="closeMenu()">▶SNS</a>
+      <a href="#memory" onclick="closeMenu()">▶MEMORY</a>
+    </nav>
+  </header>
+
+  <div class="header-space"></div>
+
+  <main>
+
+    <section class="top-animation">
+      <div class="image-stack">
+        <img class="img-004" src="./img/004.webp" alt="">
+        <div class="img-005-box">
+          <img src="./img/005.webp" alt="">
+        </div>
+      </div>
+
+      <div class="blue-cover"></div>
+      <div class="star">★</div>
+    </section>
+
+
+    <section id="news" class="content-box">
+      <h2>NEWS</h2>
+
+      <div class="news-slider">
+        <button class="slider-arrow slider-prev" type="button" onclick="moveNewsSlider(-1)">
+          ‹
+        </button>
+
+        <div class="news-slider-window">
+          <div class="news-slider-track" id="newsSliderTrack">
+
+            <a class="news-slide" href="./news/2026_02_14_4.html">
+              <img src="./img/news/2026_02_14_4.webp" alt="NEWS 6">
+            </a>
+
+            <a class="news-slide" href="./news/2026_03_21.html">
+              <img src="./img/news/2026_03_21.webp" alt="NEWS 5">
+            </a>
+
+            <a class="news-slide" href="./news/2026_05_10.html">
+              <img src="./img/news/2026_05_10.webp" alt="NEWS 4">
+            </a>
+
+            <a class="news-slide" href="./news/2026_05_30.html">
+              <img src="./img/news/2026_05_30.webp" alt="NEWS 3">
+            </a>
+
+            <a class="news-slide" href="./NEWS/2026_07_04.html">
+              <img src="./img/news/2026_07_04.webp" alt="NEWS 2">
+            </a>
+
+            <a class="news-slide" href="./news/2026_07_18.html">
+              <img src="./img/news/2026_07_18.webp" alt="NEWS 1">
+            </a>
+
+          </div>
+        </div>
+
+        <button class="slider-arrow slider-next" type="button" onclick="moveNewsSlider(1)">
+          ›
+        </button>
+      </div>
+
+      <div class="news-text-list">
+        <a href="./NEWS/2026_08_01.html">・2026/08/01:どろすたホームページが開設されました。</a>
+        <a href="./NEWS/2026_07_18.html">・2026/07/18:RPGの歌ってみたが投稿されました。</a>
+        <a href="./NEWS/2026_07_04.html">・2026/07/18:フォニイの歌ってみたが投稿されました。</a>
+        <a href="./NEWS/2026_06_06.html">・2026/07/18:【○○な人に回します】ショート動画が投稿されました。</a>
+        <a href="./NEWS/2026_05_30.html">・2026/05/30:好きすぎて滅！の歌ってみたが投稿されました。</a>
+        <a href="./NEWS/All_NEWS.html">ニュース一覧</a>
+      </div>
+    </section>
+
+    <section class="content-box" id="member">
+      <h2>MEMBER</h2>
+
+      <div class="member-list">
+
+        <a href="MEMBER/Manoyuku.html" class="member-card">
+          <img src="./img/manoyuku.webp" alt="メンバー1">
+        </a>
+
+        <a href="MEMBER/Yuula.html" class="member-card">
+          <img src="./img/yuula.webp" alt="メンバー2">
+        </a>
+
+        <a href="MEMBER/Auka.html" class="member-card">
+          <img src="./img/auka.webp" alt="メンバー3">
+        </a>
+
+      </div>
+    </section>
+
+    <section id="sns" class="content-box">
+      <h2>SNS</h2>
+      <div class="sns-list">
+
+        <a href="https://www.youtube.com/@DROPPINGSTARS3" target="_blank" rel="noopener noreferrer">
+          <img src="./img/icon/YouTube.webp" alt="YouTube">
+        </a>
+
+        <a href="https://x.com/DROPPINGSTARS3" target="_blank" rel="noopener noreferrer">
+          <img src="./img/icon/X.webp" alt="X">
+        </a>
+
+        <a href="https://www.tiktok.com/@droppingstars3" target="_blank" rel="noopener noreferrer">
+          <img src="./img/icon/TikTok.webp" alt="TikTok">
+        </a>
+
+        <a href="https://twitcasting.tv/c:droppingstars" target="_blank" rel="noopener noreferrer">
+          <img src="./img/icon/twitcasting.webp" alt="ツイキャス">
+        </a>
+
+        <a href="https://www.nicovideo.jp/user/138123899" target="_blank" rel="noopener noreferrer">
+          <img src="./img/icon/niconico.webp" alt="ニコニコ">
+        </a>
+
+      </div>
+    </section>
+
+
+
+    <section class="content-box" id="memory">
+      <h2>MEMORY</h2>
+
+      <div class="memory-list">
+        <p class="memory-item">2025/02/14:DROPPING STARS始動</p>
+        <p class="memory-item">2025/05/15:DROPPING STARS新体制になる</p>
+        <p class="memory-item">2026/01/01:叶音あぅかの名前、ビジュの変更</p>
+        <p class="memory-item">2026/01/24:グループでの配信を開始</p>
+        <p class="memory-item">2026/02/14:ゆうらのビジュの変更</p>
+        <p class="memory-item">2026/02/14:１周年記念ゲーム「どろすたーと！」を公開</p>
+        <p class="memory-item">2026/08/01:どろすたホームページを公開</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>©DROPPING STARS</p>
+  </footer>
+
+  <script src="home.js"></script>
+  <script src="turn.js"></script>
+</body>
+
+</html>
