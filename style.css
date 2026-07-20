@@ -627,7 +627,23 @@ body.animation-finished .header-space {
   background: transparent;
 }
 
+@media (orientation: portrait) {
 
+  .news-title-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .news-list-title {
+    margin-bottom: 0;
+  }
+
+  .year-switcher {
+    justify-content: center;
+  }
+
+}
 
 
 
