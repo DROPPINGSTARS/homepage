@@ -87,6 +87,23 @@
         box-sizing:border-box;
     }
 
+    .profile-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   /* 横方向中央寄せ */
+        text-align: center;    /* 文字中央寄せ */
+        gap: 6px;
+    }
+
+    .profile-item span {
+        width: auto;
+        text-align: center;
+    }
+
+    .profile-item p {
+        text-align: center;
+    }
+
 }
 
 
