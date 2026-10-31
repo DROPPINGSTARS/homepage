@@ -116,7 +116,7 @@
 
 .sns-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; /* 左揃え */
     align-items: center;
     gap: 20px;
 }
